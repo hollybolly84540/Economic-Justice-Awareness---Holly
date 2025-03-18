@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Economic Justice Awareness Home Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home Page</a>
+        </li>
+        <li>
+          <a href="backgroundInfo.html">Background Info</a>
+        </li>
+        <!--Code says that when you change the choice of subtopic, it will take you to that page. -->
+        <li>
+             <select id="subtopic" class="subtopic-dropdown" onchange="navigate()">
+            <option value="">Subtopics</option>
+            <option value="subtopic1.html">1</option>
+            <option value="subtopic2.html">2</option>
+            <option value="subtopic3.html">3</option>
+            <option value="subtopic4.html">4</option>
+          </select>
+        </li>
+        <li>
+          <a href="resources.html">Resources</a>
+        </li>
+        <li>
+          <a href="takeAction.html">Take Action</a>
+        </li>
+        <li>
+          <a href="aboutUs.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="overlayContainer">
+    <img src="imageEconomic.jpeg" style="max-width: 100%;height:auto;">
+    <div class="overlayLeft">
+      <h1 style="font-size:8vw; color:black;">Economic </h1> 
+      <h1 style="font-size:8vw;color:black;">Justice </h1> 
+      <h1 style="font-size:8vw;color:black;">Awareness </h1> 
+  </div>
+    <h1>What is Economic Justice?</h1>
+    <div class="backgroundText" style="width: 90%; margin-left: 2.2%;">
+    <h2>Explaination</h2>
+    </div>
+    <br>
+      <a href="backgroundInfo.html" class="button">More Info</a>
+    <div class="videoSection">
+      <iframe src="https://www.youtube.com/embed/b1cSzEsttDE?si=q-lbnAV369AsdiOz" height="500" width="800" title="Economic Justice Video"></iframe>
+    </div>
+    <!-- Create AI Monica. When Monica chat box click, expand into a chat box with text input available for user. User inputs an economic justice question and Monica responds with an answer. -->
+      <div id="chatBot" class="chatBot" onclick="aiBot()">
+        <h3>Chat Bot</h3>
+      </div>
+    <div id="chatbot-container">
+      <div id="chatBot-Header">
+        <h3>AI Economic Justice ChatBot</h3>
+        <div id="close-chatBot" onclick="closeChatBot()">
+          <h3>x</h3>
+      </div>
+      <div id="chatbot-body">
+        <input type="text" id="userInput" placeholder="Type your question here...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    </div>
+       <footer>
+         <p>Contact Info: <a href="mailto:__@gmail.com">__@gmail.com</a></p>
+       </footer>
+          <script src="script.js"></script>
+</body>
+</html>
+<!-- maybe instead of the bottom info, we can have a latest updates section -->
+
+      
