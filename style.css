@@ -1,0 +1,264 @@
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+/* STYLE NAV BAR */
+ul {
+   text-align:center;
+  list-style-type: none;
+  background-color: #ACD59F;
+  overflow: hidden;
+  padding: 0.5em;
+}
+li{
+  display: inline;
+}
+li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+}
+
+li a:hover {
+  background-color: #9CC98F;
+}
+
+.subtopic-dropdown{
+  appearance: none;
+  background-color: #ACD59F;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  border: none;
+  padding: 20px 0px;
+  width: 140px;
+  text-align: center;
+}
+
+.subtopic-dropdown:hover{
+  background-color: #9CC98F;
+}
+
+/* Overlay Image on Home Page */
+.overlayContainer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.overlayContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+   object-fit: cover;
+   object-position: top;
+   opacity: 0.5;
+  padding-bottom: 1em;
+}
+
+.overlayLeft {
+  text-align: left;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+/*Text Code */
+h1{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0.3em;
+  padding-left: 1em; 
+}
+h2{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 150%;
+  font-weight: normal;
+  padding-bottom: 0.3em;
+  padding-left: 1.3em; 
+  background-color: #ACD59F;
+}
+
+h3{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  font-weight: normal;
+  padding: 1em;
+  margin-top: 0.3em;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #ACD59F;
+  margin-left: 2em;
+}
+
+.aboutTitle{
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.backgroundText{
+  margin: 10px;
+  margin-left: 1.5em;
+  padding: 1em;
+  border-radius: 10px;
+  width: 97%;
+  background-color: #ACD59F;
+  font-size: 12px;
+}
+
+/*Video Sections*/
+.videoSection{
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomInfo{
+  padding: 10px;
+  width: 100%;
+  height: 120px;
+}
+
+/* footer CSS*/
+footer{
+  background-color:#ACD59F;
+  padding: 35px;
+}
+
+footer a{
+  color: black;
+}
+
+/*Button CSS*/
+.button{
+  background-color: #ACD59F;
+  color: white;
+  border-radius: 10px;
+  padding: 0.7em;
+  margin-left: 20px;
+}
+.button:hover{
+  background-color: #9CC98F;
+}
+
+/* Profile Styling*/
+.profile {
+   display: flex;
+   gap: 100px;
+   justify-content: center;
+}
+
+.profile2 {
+   display: flex;
+   gap: 100px;
+   justify-content: center;
+}
+
+.profile3 {
+   display: flex;
+   gap: 100px;
+   justify-content: center;
+}
+.profile-item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.profile img{
+   border-radius: 50%;
+  width: 100%; 
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  display: block; 
+  height: auto;
+   object-fit: cover;
+}
+.profile2 img{
+   border-radius: 50%;
+  width: 100%; 
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  display: block; 
+  height: auto;
+   object-fit: cover;
+}
+
+.profile3 img{
+   border-radius: 50%;
+  width: 100%; 
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  display: block; 
+  height: auto;
+   object-fit: cover;
+}
+
+.profileText{
+   margin: 10;
+   font-size: 20px;
+}
+
+.stories{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.storyPicture img{
+  text-align: left;
+  margin-left: 7em;
+  border-radius: 10px;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.storyText{
+  text-align: right;
+  margin-right: 1em;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  font-weight: normal;
+  padding: 3em;
+  border-radius: 10px;
+  width: 60%;
+  background-color: #ACD59F;
+}
+
+/* Style AI ChatBot*/
+#chatbot-container{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.chatBot{
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+#close-chatBot{
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: right;
+}
